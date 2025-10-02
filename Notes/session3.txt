@@ -1,0 +1,13 @@
+jsx - it is an html like syntax
+
+jsx cannot be understood by js engine directly, so parcer or any other bundler transpiles the code before the js engine executes it on browser. In parcer, this transpilation is done by Babel. 
+
+jsx attributes have camel casing 
+
+Class based components and functional components. 
+
+Functional component - a simple js function that returns a piece of jsx. 
+
+component composition - composing a component into another component. 
+
+jsx prevents cross-side scripting attacks when running jsx code. 

@@ -1,0 +1,14 @@
+package.json, package-lock.json\
+caret vs tilde
+parcel 
+
+react packages 
+dev build, prod build 
+parcel features - 
+1. local server hosting 
+2. hot reload
+3. bundling 
+4. tree shaking - removing unused code 
+5. reliable caching 
+6. code minification
+ 
