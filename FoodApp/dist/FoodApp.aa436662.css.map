@@ -1,1 +1,0 @@
-{"mappings":"AAAA;;;;;;AAKA","sources":["App.css"],"sourcesContent":["body{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n.nav-item{\r\n    display: flex;\r\n    align-items: center;\r\n}"],"names":[],"version":3,"file":"FoodApp.aa436662.css.map","sourceRoot":"/__parcel_source_root/"}

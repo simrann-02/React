@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
-import { MENU_API } from "../Utils/constants";
+import { RESTAURANT_API } from "../Utils/constants";
+import { Link } from "react-router-dom";
 
 const Body = () => {
     const [searchText, setSearchText] = useState("");
@@ -11,7 +12,7 @@ const Body = () => {
         const fetchData = async () => {
             try {
                 const response = await fetch(
-                    MENU_API
+                    RESTAURANT_API
                 );
 
                 if (!response.ok) {
@@ -37,7 +38,15 @@ const Body = () => {
                 <button className="cursor-pointer bg-gray-400  px-4 p-1 rounded-lg" type="submit">Search</button>
             </div>
             <div className="flex gap-2 flex-wrap mt-2">
-                {restaurants.map((restaurant) => <RestaurantCard key={restaurant.info.id} resData={restaurant} />)}
+                {restaurants.map((restaurant) => (
+                    <Link
+                        key={restaurant?.info.id}
+                        to={"/restaurants/" + restaurant?.info.id}
+                    >
+
+                        <RestaurantCard resData={restaurant} />
+                    </Link>
+                ))}
             </div>
         </div>
     )
