@@ -1,5 +1,11 @@
+import Body from './components/Body'
+
 const App = () => {
-  return <div className="text-2xl bg-amber-50">Hey, everyone!</div>
+  return (
+    <div>
+      <Body />
+    </div>
+  )
 }
 
 export default App;
